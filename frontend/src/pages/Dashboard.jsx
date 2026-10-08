@@ -297,17 +297,17 @@ export default function Dashboard() {
             <div className="perf-metrics-strip">
               <div className="perf-metric-cell">
                 <div className="perf-metric-lbl">MAE</div>
-                <div className="perf-metric-val">€{metrics ? metrics.MAE.toFixed(2) : '20.19'}</div>
+                <div className="perf-metric-val">₹{metrics?.mae_inr ? metrics.mae_inr.toLocaleString() : (metrics ? Math.round(metrics.MAE * 100).toLocaleString() : '2,019')}</div>
                 <div className="perf-metric-sub">
-                  ≈ ₹{metrics?.mae_inr ? metrics.mae_inr.toLocaleString() : '2,019'}
+                  Mean Absolute Error (Rs)
                 </div>
               </div>
 
               <div className="perf-metric-cell">
                 <div className="perf-metric-lbl">RMSE</div>
-                <div className="perf-metric-val">€{metrics ? metrics.RMSE.toFixed(2) : '30.57'}</div>
+                <div className="perf-metric-val">₹{metrics?.rmse_inr ? metrics.rmse_inr.toLocaleString() : (metrics ? Math.round(metrics.RMSE * 100).toLocaleString() : '3,057')}</div>
                 <div className="perf-metric-sub">
-                  ≈ ₹{metrics?.rmse_inr ? metrics.rmse_inr.toLocaleString() : '3,057'}
+                  Root Mean Squared Error (Rs)
                 </div>
               </div>
 

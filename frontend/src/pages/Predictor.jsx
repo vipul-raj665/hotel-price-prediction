@@ -578,7 +578,7 @@ export default function Predictor() {
                     <span className="result-per-night"> /night</span>
                   </div>
                   <div className="result-source-eur">
-                    Source ADR: €{result.predicted_adr_eur.toFixed(2)}
+                    Base Model Rate: Rs. {result.predicted_price_inr.toLocaleString()}
                   </div>
                 </div>
 

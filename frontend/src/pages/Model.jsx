@@ -108,23 +108,23 @@ export default function Model() {
               <div className="eval-metric-box">
                 <div className="eval-metric-name">MAE</div>
                 <div className="eval-metric-number">
-                  €{metrics ? metrics.MAE.toFixed(2) : '20.19'}
+                  ₹{metrics?.mae_inr ? metrics.mae_inr.toLocaleString() : (metrics ? Math.round(metrics.MAE * 100).toLocaleString() : '2,019')}
                 </div>
                 <div className="eval-metric-inr">
-                  ≈ ₹{metrics?.mae_inr ? metrics.mae_inr.toLocaleString() : '2,019'}
+                  Mean Absolute Error (Rs)
                 </div>
-                <div className="eval-metric-desc">Mean Absolute Error</div>
+                <div className="eval-metric-desc">Avg price error per night</div>
               </div>
 
               <div className="eval-metric-box">
                 <div className="eval-metric-name">RMSE</div>
                 <div className="eval-metric-number">
-                  €{metrics ? metrics.RMSE.toFixed(2) : '30.57'}
+                  ₹{metrics?.rmse_inr ? metrics.rmse_inr.toLocaleString() : (metrics ? Math.round(metrics.RMSE * 100).toLocaleString() : '3,057')}
                 </div>
                 <div className="eval-metric-inr">
-                  ≈ ₹{metrics?.rmse_inr ? metrics.rmse_inr.toLocaleString() : '3,057'}
+                  Root Mean Squared Error (Rs)
                 </div>
-                <div className="eval-metric-desc">Root Mean Squared Error</div>
+                <div className="eval-metric-desc">Std dev of prediction errors</div>
               </div>
 
               <div className="eval-metric-box highlight">
@@ -221,7 +221,7 @@ export default function Model() {
                 <div className="step-number">Step 3</div>
                 <div className="step-title">Random Forest Inference</div>
                 <p className="step-text">
-                  An ensemble of 100 decision trees evaluates the feature vector and averages their predictions to determine the expected ADR in EUR.
+                  An ensemble of 100 decision trees evaluates the feature vector and averages their predictions to determine the expected nightly rate.
                 </p>
               </div>
 
@@ -229,7 +229,7 @@ export default function Model() {
                 <div className="step-number">Step 4</div>
                 <div className="step-title">Currency & Total Cost</div>
                 <p className="step-text">
-                  The predicted rate is converted to INR (at 1 EUR = ₹100), and stay totals are calculated across weekend and weekday nights for intuitive presentation.
+                  The predicted rate is calibrated in INR (Rs), and stay totals are calculated across weekend and weekday nights for intuitive presentation.
                 </p>
               </div>
             </div>

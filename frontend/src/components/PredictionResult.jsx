@@ -16,7 +16,7 @@ export default function PredictionResult({ result, bookingDetails }) {
             <span className="price-inr-subtext"> / night</span>
           </div>
           <div className="model-adr-eur-tag">
-            Source ADR: €{result.predicted_adr_eur.toFixed(2)}
+            Base Model Rate: Rs. {result.predicted_price_inr.toLocaleString()}
           </div>
         </div>
 
