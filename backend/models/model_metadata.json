@@ -1,0 +1,812 @@
+{
+  "dataset_name": "Hotel Booking Reservation \u2014 Updated 2024",
+  "dataset_records": 119390,
+  "cleaned_records": 117429,
+  "year_range": "2022 \u2013 2024",
+  "features": [
+    "hotel",
+    "city",
+    "arrival_date_month",
+    "meal",
+    "country",
+    "market_segment",
+    "distribution_channel",
+    "reserved_room_type",
+    "assigned_room_type",
+    "deposit_type",
+    "customer_type",
+    "lead_time",
+    "arrival_date_year",
+    "stays_in_weekend_nights",
+    "stays_in_week_nights",
+    "total_nights",
+    "adults",
+    "children",
+    "babies",
+    "total_guests",
+    "is_repeated_guest",
+    "previous_cancellations",
+    "previous_bookings_not_canceled",
+    "booking_changes",
+    "days_in_waiting_list",
+    "required_car_parking_spaces",
+    "total_of_special_requests"
+  ],
+  "num_features": 27,
+  "training_records": 93943,
+  "testing_records": 23486,
+  "model_name": "RandomForestRegressor",
+  "n_estimators": 100,
+  "max_depth": 22,
+  "random_state": 42,
+  "mae": 20.19,
+  "rmse": 30.57,
+  "r2": 0.5753,
+  "mape": 25.83,
+  "currency": "INR",
+  "currency_symbol": "\u20b9",
+  "eur_to_inr": 100,
+  "trained_at": "2026-10-08 00:53:58",
+  "feature_importance": [
+    {
+      "feature": "total_guests",
+      "importance": 0.2486
+    },
+    {
+      "feature": "lead_time",
+      "importance": 0.1088
+    },
+    {
+      "feature": "market_segment",
+      "importance": 0.0998
+    },
+    {
+      "feature": "reserved_room_type",
+      "importance": 0.0914
+    },
+    {
+      "feature": "hotel",
+      "importance": 0.0784
+    },
+    {
+      "feature": "meal",
+      "importance": 0.0612
+    },
+    {
+      "feature": "country",
+      "importance": 0.0605
+    },
+    {
+      "feature": "arrival_date_month",
+      "importance": 0.0413
+    },
+    {
+      "feature": "total_nights",
+      "importance": 0.0311
+    },
+    {
+      "feature": "assigned_room_type",
+      "importance": 0.0271
+    }
+  ],
+  "statistics": {
+    "overall_average_adr_eur": 103.49,
+    "overall_average_nightly_rate_inr": 10349,
+    "by_hotel_type": [
+      {
+        "hotel_type": "City Hotel",
+        "avg_adr_eur": 106.87,
+        "avg_price_inr": 10687
+      },
+      {
+        "hotel_type": "Resort Hotel",
+        "avg_adr_eur": 96.77,
+        "avg_price_inr": 9677
+      }
+    ],
+    "by_year": [
+      {
+        "year": "2022",
+        "avg_adr_eur": 89.5,
+        "avg_price_inr": 8950
+      },
+      {
+        "year": "2023",
+        "avg_adr_eur": 96.2,
+        "avg_price_inr": 9620
+      },
+      {
+        "year": "2024",
+        "avg_adr_eur": 103.49,
+        "avg_price_inr": 10349
+      }
+    ],
+    "by_month": [
+      {
+        "month": "January",
+        "month_short": "Jan",
+        "avg_adr_eur": 103.44,
+        "avg_price_inr": 10344
+      },
+      {
+        "month": "February",
+        "month_short": "Feb",
+        "avg_adr_eur": 103.53,
+        "avg_price_inr": 10353
+      },
+      {
+        "month": "March",
+        "month_short": "Mar",
+        "avg_adr_eur": 102.91,
+        "avg_price_inr": 10291
+      },
+      {
+        "month": "April",
+        "month_short": "Apr",
+        "avg_adr_eur": 102.95,
+        "avg_price_inr": 10295
+      },
+      {
+        "month": "May",
+        "month_short": "May",
+        "avg_adr_eur": 103.0,
+        "avg_price_inr": 10300
+      },
+      {
+        "month": "June",
+        "month_short": "Jun",
+        "avg_adr_eur": 103.96,
+        "avg_price_inr": 10396
+      },
+      {
+        "month": "July",
+        "month_short": "Jul",
+        "avg_adr_eur": 103.41,
+        "avg_price_inr": 10341
+      },
+      {
+        "month": "August",
+        "month_short": "Aug",
+        "avg_adr_eur": 103.95,
+        "avg_price_inr": 10395
+      },
+      {
+        "month": "September",
+        "month_short": "Sep",
+        "avg_adr_eur": 103.99,
+        "avg_price_inr": 10399
+      },
+      {
+        "month": "October",
+        "month_short": "Oct",
+        "avg_adr_eur": 103.16,
+        "avg_price_inr": 10316
+      },
+      {
+        "month": "November",
+        "month_short": "Nov",
+        "avg_adr_eur": 104.29,
+        "avg_price_inr": 10429
+      },
+      {
+        "month": "December",
+        "month_short": "Dec",
+        "avg_adr_eur": 103.3,
+        "avg_price_inr": 10330
+      }
+    ],
+    "by_city": [
+      {
+        "city": "Pune",
+        "avg_adr_eur": 104.03,
+        "avg_price_inr": 10403
+      },
+      {
+        "city": "Bhopal",
+        "avg_adr_eur": 103.92,
+        "avg_price_inr": 10392
+      },
+      {
+        "city": "Ahmedabad",
+        "avg_adr_eur": 103.85,
+        "avg_price_inr": 10385
+      },
+      {
+        "city": "Chennai",
+        "avg_adr_eur": 103.81,
+        "avg_price_inr": 10381
+      },
+      {
+        "city": "Kolkata",
+        "avg_adr_eur": 103.73,
+        "avg_price_inr": 10373
+      },
+      {
+        "city": "Kochi",
+        "avg_adr_eur": 103.68,
+        "avg_price_inr": 10368
+      },
+      {
+        "city": "Chandigarh",
+        "avg_adr_eur": 103.66,
+        "avg_price_inr": 10366
+      },
+      {
+        "city": "Hyderabad",
+        "avg_adr_eur": 103.49,
+        "avg_price_inr": 10349
+      },
+      {
+        "city": "Mumbai",
+        "avg_adr_eur": 103.48,
+        "avg_price_inr": 10348
+      },
+      {
+        "city": "Jaipur",
+        "avg_adr_eur": 103.44,
+        "avg_price_inr": 10344
+      },
+      {
+        "city": "Lucknow",
+        "avg_adr_eur": 103.25,
+        "avg_price_inr": 10325
+      },
+      {
+        "city": "Indore",
+        "avg_adr_eur": 103.18,
+        "avg_price_inr": 10318
+      },
+      {
+        "city": "Bangalore",
+        "avg_adr_eur": 103.17,
+        "avg_price_inr": 10317
+      },
+      {
+        "city": "Delhi",
+        "avg_adr_eur": 102.8,
+        "avg_price_inr": 10280
+      },
+      {
+        "city": "Goa",
+        "avg_adr_eur": 102.78,
+        "avg_price_inr": 10278
+      }
+    ],
+    "by_room_type": [
+      {
+        "room_type": "Room H",
+        "avg_adr_eur": 190.12,
+        "avg_price_inr": 19012
+      },
+      {
+        "room_type": "Room G",
+        "avg_adr_eur": 183.72,
+        "avg_price_inr": 18372
+      },
+      {
+        "room_type": "Room F",
+        "avg_adr_eur": 172.02,
+        "avg_price_inr": 17202
+      },
+      {
+        "room_type": "Room C",
+        "avg_adr_eur": 163.55,
+        "avg_price_inr": 16355
+      },
+      {
+        "room_type": "Room E",
+        "avg_adr_eur": 126.71,
+        "avg_price_inr": 12671
+      },
+      {
+        "room_type": "Room L",
+        "avg_adr_eur": 124.67,
+        "avg_price_inr": 12467
+      },
+      {
+        "room_type": "Room D",
+        "avg_adr_eur": 121.93,
+        "avg_price_inr": 12193
+      },
+      {
+        "room_type": "Room B",
+        "avg_adr_eur": 93.11,
+        "avg_price_inr": 9311
+      },
+      {
+        "room_type": "Room A",
+        "avg_adr_eur": 92.26,
+        "avg_price_inr": 9226
+      }
+    ],
+    "by_market_segment": [
+      {
+        "segment": "Online TA",
+        "avg_adr_eur": 117.96,
+        "avg_price_inr": 11796
+      },
+      {
+        "segment": "Direct",
+        "avg_adr_eur": 117.69,
+        "avg_price_inr": 11769
+      },
+      {
+        "segment": "Aviation",
+        "avg_adr_eur": 102.74,
+        "avg_price_inr": 10274
+      },
+      {
+        "segment": "Offline TA/TO",
+        "avg_adr_eur": 88.35,
+        "avg_price_inr": 8835
+      },
+      {
+        "segment": "Groups",
+        "avg_adr_eur": 80.51,
+        "avg_price_inr": 8051
+      },
+      {
+        "segment": "Corporate",
+        "avg_adr_eur": 70.45,
+        "avg_price_inr": 7045
+      },
+      {
+        "segment": "Complementary",
+        "avg_adr_eur": 34.04,
+        "avg_price_inr": 3404
+      },
+      {
+        "segment": "Undefined",
+        "avg_adr_eur": 15.0,
+        "avg_price_inr": 1500
+      }
+    ],
+    "by_customer_type": [
+      {
+        "customer_type": "Transient",
+        "avg_adr_eur": 108.71,
+        "avg_price_inr": 10871
+      },
+      {
+        "customer_type": "Group",
+        "avg_adr_eur": 88.55,
+        "avg_price_inr": 8855
+      },
+      {
+        "customer_type": "Contract",
+        "avg_adr_eur": 88.07,
+        "avg_price_inr": 8807
+      },
+      {
+        "customer_type": "Transient-Party",
+        "avg_adr_eur": 87.67,
+        "avg_price_inr": 8767
+      }
+    ],
+    "actual_vs_predicted": [
+      {
+        "id": 1,
+        "actual_eur": 225.0,
+        "predicted_eur": 223.35,
+        "actual_inr": 22500,
+        "predicted_inr": 22335
+      },
+      {
+        "id": 2,
+        "actual_eur": 170.0,
+        "predicted_eur": 116.74,
+        "actual_inr": 17000,
+        "predicted_inr": 11674
+      },
+      {
+        "id": 3,
+        "actual_eur": 72.0,
+        "predicted_eur": 70.26,
+        "actual_inr": 7200,
+        "predicted_inr": 7026
+      },
+      {
+        "id": 4,
+        "actual_eur": 175.0,
+        "predicted_eur": 134.6,
+        "actual_inr": 17500,
+        "predicted_inr": 13460
+      },
+      {
+        "id": 5,
+        "actual_eur": 72.0,
+        "predicted_eur": 98.69,
+        "actual_inr": 7200,
+        "predicted_inr": 9869
+      },
+      {
+        "id": 6,
+        "actual_eur": 144.5,
+        "predicted_eur": 100.43,
+        "actual_inr": 14450,
+        "predicted_inr": 10043
+      },
+      {
+        "id": 7,
+        "actual_eur": 90.0,
+        "predicted_eur": 90.96,
+        "actual_inr": 9000,
+        "predicted_inr": 9096
+      },
+      {
+        "id": 8,
+        "actual_eur": 170.0,
+        "predicted_eur": 170.0,
+        "actual_inr": 17000,
+        "predicted_inr": 17000
+      },
+      {
+        "id": 9,
+        "actual_eur": 46.98,
+        "predicted_eur": 108.4,
+        "actual_inr": 4698,
+        "predicted_inr": 10840
+      },
+      {
+        "id": 10,
+        "actual_eur": 75.0,
+        "predicted_eur": 71.5,
+        "actual_inr": 7500,
+        "predicted_inr": 7150
+      },
+      {
+        "id": 11,
+        "actual_eur": 112.5,
+        "predicted_eur": 101.39,
+        "actual_inr": 11250,
+        "predicted_inr": 10139
+      },
+      {
+        "id": 12,
+        "actual_eur": 96.9,
+        "predicted_eur": 103.61,
+        "actual_inr": 9690,
+        "predicted_inr": 10361
+      },
+      {
+        "id": 13,
+        "actual_eur": 252.0,
+        "predicted_eur": 169.73,
+        "actual_inr": 25200,
+        "predicted_inr": 16973
+      },
+      {
+        "id": 14,
+        "actual_eur": 65.0,
+        "predicted_eur": 69.36,
+        "actual_inr": 6500,
+        "predicted_inr": 6936
+      },
+      {
+        "id": 15,
+        "actual_eur": 82.45,
+        "predicted_eur": 89.43,
+        "actual_inr": 8245,
+        "predicted_inr": 8944
+      },
+      {
+        "id": 16,
+        "actual_eur": 174.0,
+        "predicted_eur": 148.82,
+        "actual_inr": 17400,
+        "predicted_inr": 14882
+      },
+      {
+        "id": 17,
+        "actual_eur": 151.2,
+        "predicted_eur": 151.22,
+        "actual_inr": 15120,
+        "predicted_inr": 15122
+      },
+      {
+        "id": 18,
+        "actual_eur": 50.0,
+        "predicted_eur": 40.81,
+        "actual_inr": 5000,
+        "predicted_inr": 4081
+      },
+      {
+        "id": 19,
+        "actual_eur": 126.0,
+        "predicted_eur": 122.61,
+        "actual_inr": 12600,
+        "predicted_inr": 12261
+      },
+      {
+        "id": 20,
+        "actual_eur": 37.8,
+        "predicted_eur": 78.37,
+        "actual_inr": 3780,
+        "predicted_inr": 7837
+      },
+      {
+        "id": 21,
+        "actual_eur": 115.0,
+        "predicted_eur": 114.13,
+        "actual_inr": 11500,
+        "predicted_inr": 11413
+      },
+      {
+        "id": 22,
+        "actual_eur": 110.0,
+        "predicted_eur": 89.14,
+        "actual_inr": 11000,
+        "predicted_inr": 8914
+      },
+      {
+        "id": 23,
+        "actual_eur": 120.0,
+        "predicted_eur": 148.3,
+        "actual_inr": 12000,
+        "predicted_inr": 14830
+      },
+      {
+        "id": 24,
+        "actual_eur": 67.0,
+        "predicted_eur": 71.12,
+        "actual_inr": 6700,
+        "predicted_inr": 7112
+      },
+      {
+        "id": 25,
+        "actual_eur": 100.0,
+        "predicted_eur": 101.57,
+        "actual_inr": 10000,
+        "predicted_inr": 10157
+      },
+      {
+        "id": 26,
+        "actual_eur": 48.0,
+        "predicted_eur": 107.37,
+        "actual_inr": 4800,
+        "predicted_inr": 10737
+      },
+      {
+        "id": 27,
+        "actual_eur": 150.45,
+        "predicted_eur": 151.59,
+        "actual_inr": 15045,
+        "predicted_inr": 15159
+      },
+      {
+        "id": 28,
+        "actual_eur": 111.0,
+        "predicted_eur": 129.0,
+        "actual_inr": 11100,
+        "predicted_inr": 12900
+      },
+      {
+        "id": 29,
+        "actual_eur": 180.0,
+        "predicted_eur": 127.61,
+        "actual_inr": 18000,
+        "predicted_inr": 12761
+      },
+      {
+        "id": 30,
+        "actual_eur": 117.0,
+        "predicted_eur": 103.41,
+        "actual_inr": 11700,
+        "predicted_inr": 10341
+      },
+      {
+        "id": 31,
+        "actual_eur": 139.5,
+        "predicted_eur": 129.26,
+        "actual_inr": 13950,
+        "predicted_inr": 12926
+      },
+      {
+        "id": 32,
+        "actual_eur": 86.0,
+        "predicted_eur": 87.95,
+        "actual_inr": 8600,
+        "predicted_inr": 8795
+      },
+      {
+        "id": 33,
+        "actual_eur": 80.0,
+        "predicted_eur": 87.16,
+        "actual_inr": 8000,
+        "predicted_inr": 8716
+      },
+      {
+        "id": 34,
+        "actual_eur": 34.4,
+        "predicted_eur": 58.13,
+        "actual_inr": 3440,
+        "predicted_inr": 5813
+      },
+      {
+        "id": 35,
+        "actual_eur": 144.0,
+        "predicted_eur": 75.36,
+        "actual_inr": 14400,
+        "predicted_inr": 7536
+      },
+      {
+        "id": 36,
+        "actual_eur": 144.0,
+        "predicted_eur": 94.14,
+        "actual_inr": 14400,
+        "predicted_inr": 9414
+      },
+      {
+        "id": 37,
+        "actual_eur": 75.0,
+        "predicted_eur": 75.26,
+        "actual_inr": 7500,
+        "predicted_inr": 7526
+      },
+      {
+        "id": 38,
+        "actual_eur": 80.0,
+        "predicted_eur": 85.13,
+        "actual_inr": 8000,
+        "predicted_inr": 8513
+      },
+      {
+        "id": 39,
+        "actual_eur": 80.0,
+        "predicted_eur": 82.15,
+        "actual_inr": 8000,
+        "predicted_inr": 8215
+      },
+      {
+        "id": 40,
+        "actual_eur": 62.0,
+        "predicted_eur": 64.08,
+        "actual_inr": 6200,
+        "predicted_inr": 6408
+      },
+      {
+        "id": 41,
+        "actual_eur": 106.0,
+        "predicted_eur": 114.69,
+        "actual_inr": 10600,
+        "predicted_inr": 11469
+      },
+      {
+        "id": 42,
+        "actual_eur": 68.15,
+        "predicted_eur": 67.7,
+        "actual_inr": 6815,
+        "predicted_inr": 6770
+      },
+      {
+        "id": 43,
+        "actual_eur": 80.0,
+        "predicted_eur": 79.66,
+        "actual_inr": 8000,
+        "predicted_inr": 7966
+      },
+      {
+        "id": 44,
+        "actual_eur": 79.2,
+        "predicted_eur": 97.15,
+        "actual_inr": 7920,
+        "predicted_inr": 9715
+      },
+      {
+        "id": 45,
+        "actual_eur": 90.0,
+        "predicted_eur": 90.0,
+        "actual_inr": 9000,
+        "predicted_inr": 9000
+      },
+      {
+        "id": 46,
+        "actual_eur": 260.0,
+        "predicted_eur": 198.24,
+        "actual_inr": 26000,
+        "predicted_inr": 19824
+      },
+      {
+        "id": 47,
+        "actual_eur": 93.0,
+        "predicted_eur": 88.05,
+        "actual_inr": 9300,
+        "predicted_inr": 8805
+      },
+      {
+        "id": 48,
+        "actual_eur": 72.25,
+        "predicted_eur": 101.22,
+        "actual_inr": 7225,
+        "predicted_inr": 10122
+      },
+      {
+        "id": 49,
+        "actual_eur": 80.0,
+        "predicted_eur": 73.0,
+        "actual_inr": 8000,
+        "predicted_inr": 7300
+      },
+      {
+        "id": 50,
+        "actual_eur": 134.0,
+        "predicted_eur": 58.94,
+        "actual_inr": 13400,
+        "predicted_inr": 5894
+      },
+      {
+        "id": 51,
+        "actual_eur": 162.0,
+        "predicted_eur": 133.79,
+        "actual_inr": 16200,
+        "predicted_inr": 13379
+      },
+      {
+        "id": 52,
+        "actual_eur": 51.37,
+        "predicted_eur": 50.97,
+        "actual_inr": 5137,
+        "predicted_inr": 5097
+      },
+      {
+        "id": 53,
+        "actual_eur": 120.0,
+        "predicted_eur": 92.28,
+        "actual_inr": 12000,
+        "predicted_inr": 9228
+      },
+      {
+        "id": 54,
+        "actual_eur": 60.0,
+        "predicted_eur": 67.37,
+        "actual_inr": 6000,
+        "predicted_inr": 6737
+      },
+      {
+        "id": 55,
+        "actual_eur": 214.0,
+        "predicted_eur": 150.38,
+        "actual_inr": 21400,
+        "predicted_inr": 15038
+      },
+      {
+        "id": 56,
+        "actual_eur": 40.0,
+        "predicted_eur": 49.92,
+        "actual_inr": 4000,
+        "predicted_inr": 4992
+      },
+      {
+        "id": 57,
+        "actual_eur": 184.0,
+        "predicted_eur": 172.83,
+        "actual_inr": 18400,
+        "predicted_inr": 17283
+      },
+      {
+        "id": 58,
+        "actual_eur": 79.2,
+        "predicted_eur": 99.59,
+        "actual_inr": 7920,
+        "predicted_inr": 9959
+      },
+      {
+        "id": 59,
+        "actual_eur": 100.0,
+        "predicted_eur": 100.0,
+        "actual_inr": 10000,
+        "predicted_inr": 10000
+      },
+      {
+        "id": 60,
+        "actual_eur": 114.0,
+        "predicted_eur": 119.11,
+        "actual_inr": 11400,
+        "predicted_inr": 11911
+      }
+    ]
+  },
+  "average_nightly_rate_inr": 10349,
+  "average_adr_eur": 103.49,
+  "hotels_count": 2
+}
