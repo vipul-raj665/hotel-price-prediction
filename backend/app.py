@@ -101,6 +101,15 @@ class PredictionInput(BaseModel):
     total_of_special_requests: int = Field(1, example=1)
 
 
+@app.get("/")
+def root():
+    return {
+        "message": "Hotel Price Prediction & Analytics API is running",
+        "docs": "/docs",
+        "health": "/api/health",
+    }
+
+
 @app.get("/api/health")
 def get_health():
     """

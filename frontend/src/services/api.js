@@ -2,7 +2,11 @@
  * Centralized API Service for Hotel Price Prediction System
  */
 
-const BASE_URL = 'http://127.0.0.1:8000/api';
+let apiOrigin = (import.meta.env.VITE_API_URL || '').trim();
+if (apiOrigin && !apiOrigin.startsWith('http://') && !apiOrigin.startsWith('https://')) {
+  apiOrigin = `https://${apiOrigin}`;
+}
+const BASE_URL = apiOrigin ? `${apiOrigin.replace(/\/$/, '')}/api` : '/api';
 
 async function handleResponse(response) {
   if (!response.ok) {
